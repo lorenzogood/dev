@@ -1,4 +1,8 @@
-{pkgs, ...}: let
+{
+  pkgs,
+  lib,
+  ...
+}: let
   plugins = let
     inherit (pkgs) vimPlugins;
   in
@@ -66,6 +70,7 @@
     buildVimPlugin {
       name = "FoehammerVim";
       src = ./config;
+      buildInputs = plugins;
     };
 
   extraConfig = ''
