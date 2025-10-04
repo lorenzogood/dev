@@ -7,6 +7,9 @@
 
       export PATH=$PATH:/usr/local/bin:/usr/bin:/bin
     '';
+    bashrcExtra = ''
+      export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+    '';
   };
 
   home = {
