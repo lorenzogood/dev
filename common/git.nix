@@ -4,7 +4,7 @@
   programs.git = {
     enable = true;
     lfs.enable = true;
-    userName = "foehammer127";
+    userName = "Lorenzo Good";
     userEmail = "foehammer@disroot.org";
 
     signing = {

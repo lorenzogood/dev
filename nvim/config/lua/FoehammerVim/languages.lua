@@ -47,7 +47,7 @@ local function on_attach(client, buffer)
 	vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
 	vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format { async = true } end, opts)
 
-	vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format({ async = false })]]
+	-- vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format({ async = false })]]
 
 	if client.server_capabilities.documentHighlightProvider then
 		autocmd_clear { group = augroup_highlight, buffer = buffer }
