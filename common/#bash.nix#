@@ -1,7 +1,7 @@
 {lib, ...}: {
   programs.bash = {
     enable = true;
-
+q
     initExtra = ''
       source /etc/profile
 
@@ -19,7 +19,6 @@
     };
 
     shellAliases = {
-      emacs = "emacs -nw";
       vi = "nvim";
       vim = "nvim";
       tl = "tmux list-sessions";
