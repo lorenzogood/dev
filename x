@@ -4,8 +4,8 @@ function switch() {
 	home-manager switch --flake .#$1
 }
 
-if [[ -n $1 ]]; then 
+if [[ -n $1 ]]; then
 	switch $1
 else
-        switch default	
+        switch default
 fi

@@ -20,6 +20,10 @@
 
     shellAliases = {
       emacs = "emacs -nw";
+      estart = "systemctl --user start emacs";
+      estop = "systemctl --user stop emacs";
+      erestart = "systemctl --user restart emacs";
+      ec = "emacsclient -nw";
       vi = "nvim";
       vim = "nvim";
       tl = "tmux list-sessions";

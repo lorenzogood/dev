@@ -199,7 +199,7 @@ local function init()
 		ignore_install = {},
 		ensure_installed = {},
 		highlight = { enable = true },
-		indent = { enable = true },
+		indent = { enable = false },
 		modules = {},
 		rainbow = { enable = true },
 		sync_install = false,
